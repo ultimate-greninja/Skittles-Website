@@ -1,4 +1,4 @@
-<?php include "header.php";?>
+<?php include "inc/header.php";?>
 <?php
     // Check if the form is submitted
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -30,4 +30,4 @@
             </form>
         </div>
     </div>
-<?php include "footer.php";?>
+<?php include "inc/footer.php";?>
