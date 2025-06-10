@@ -19,14 +19,14 @@
                     setcookie("teamId", $row["TeamId"], time() + (86400 * 30), "/"); // 86400 = 1 day
                     $stmt->close();
                     mysqli_close($conn);
-                    header("location:index.php");
+                    header("location:home.php");
                     exit();
                 } else {
                     setcookie("passwordIncorrect", "", time() + (86400 * 30), "/"); // 86400 = 1 day
                     echo "password incorrect";
                     $stmt->close();
                     mysqli_close($conn);
-                    header("location:titleScreen.php");
+                    header("location:index.php");
                     exit();
                 }
             } else {
@@ -34,7 +34,7 @@
                 echo "no account";
                 $stmt->close();
                 mysqli_close($conn);
-                header("location:titleScreen.php");
+                header("location:index.php");
                 exit();
             }
         }
