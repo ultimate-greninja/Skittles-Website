@@ -1,5 +1,4 @@
-<?php include "inc/header.php";?>
-<?php
+<?php include "inc/header.php";
     // Check if the form is submitted
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Check which button is clicked
